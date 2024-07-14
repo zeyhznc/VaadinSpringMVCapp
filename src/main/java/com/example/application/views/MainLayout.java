@@ -2,6 +2,7 @@ package com.example.application.views;
 
 import com.example.application.views.about.AboutView;
 import com.example.application.views.helloworld.HelloWorldView;
+import com.example.application.views.personel.PersonelView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -52,6 +53,7 @@ public class MainLayout extends AppLayout {
         SideNav nav = new SideNav();
 
         nav.addItem(new SideNavItem("Hello World", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Personel", PersonelView.class, LineAwesomeIcon.TH_LIST_SOLID.create()));
         nav.addItem(new SideNavItem("About", AboutView.class, LineAwesomeIcon.FILE.create()));
 
         return nav;
